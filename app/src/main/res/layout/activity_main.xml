@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <io.codetail.widget.RevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/reveal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:background="#34B9E4"
+            android:id="@+id/clearall">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#34B9E4"
+                android:gravity="right"
+                android:maxLength="13"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView1"
+                android:background="#34B9E4"
+                android:gravity="right"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView2"
+                android:background="#34B9E4"
+                android:gravity="right"
+                android:maxLength="13"
+                android:textSize="50dp" />
+        </LinearLayout>
+    </io.codetail.widget.RevealLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reveal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_seven"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="7" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_eighit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="8" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_nine"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_four"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="4" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_five"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="5" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_six"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_one"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="1" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="2" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_three"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_dot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="." />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_zero"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="0" />
+
+            <com.gc.materialdesign.views.ButtonFlat
+                android:id="@+id/btn_equal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reveal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="75dp"
+            android:background="#e35f6c"
+            android:text="DEL"
+            android:textColor="#FFFFFF" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/btn_jia"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="+" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/btn_jian"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="-" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/btn_cheng"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="×" />
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/btn_chu"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="÷" />
+
+
+    </LinearLayout>
+</RelativeLayout>
